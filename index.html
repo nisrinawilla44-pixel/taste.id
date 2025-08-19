@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sendal.id — sandal kekinian & comfy</title>
+  <meta name="description" content="Sendal kekinian warna pastel. Nyaman dipakai sehari-hari.">
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">S</span>
+        <span>sendal.id</span>
+        <span class="badge">baru</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#produk">Produk</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#tentang">Tentang</a>
+        <button id="open-cart" class="btn outline">Keranjang <span id="cart-count" class="badge">0</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="slides">
+        <figure class="slide"><img src="assets/images/slide1.svg" alt="New pastel slides"></figure>
+        <figure class="slide"><img src="assets/images/slide2.svg" alt="Everyday comfort"></figure>
+        <figure class="slide"><img src="assets/images/slide3.svg" alt="Mix & match"></figure>
+      </div>
+      <div class="slider-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </section>
+
+    <section id="produk" class="section">
+      <h2 class="section-title">Produk Unggulan</h2>
+      <p class="section-sub">Warna pastel, desain simple, kualitas no debat.</p>
+      <div id="products" class="products"></div>
+    </section>
+
+    <section id="galeri" class="section">
+      <h2 class="section-title">Galeri ala Pinterest</h2>
+      <p class="section-sub">Moodboard mix and match — vibes pastel yang nggak norak.</p>
+      <div id="masonry" class="masonry"></div>
+    </section>
+
+    <section id="tentang" class="section">
+      <h2 class="section-title">Tentang sendal.id</h2>
+      <p class="section-sub">Brand lokal dengan misi bikin kaki kamu happy tiap hari.</p>
+      <div class="row" style="flex-wrap:wrap; gap:16px">
+        <a href="#produk" class="btn">Belanja Sekarang</a>
+        <a href="checkout.html" class="btn outline">Checkout</a>
+      </div>
+    </section>
+
+    <div id="thanks" class="section" style="display:none">
+      <h2 class="section-title">Terima kasih!</h2>
+      <p class="section-sub">Pesananmu sudah kami terima.</p>
+    </div>
+  </main>
+
+  <aside class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3 style="margin:0">Keranjang</h3>
+      <button id="close-cart" class="btn outline">Tutup</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-summary">
+      <div class="row" style="justify-content:space-between">
+        <strong>Total</strong>
+        <strong id="cart-total">Rp 0</strong>
+      </div>
+      <button id="checkout-btn" class="btn">Checkout</button>
+      <small>Belum termasuk ongkir. Simulasi tanpa pembayaran.</small>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <div class="container grid">
+      <div>
+        <div class="brand"><span class="brand-badge">S</span>sendal.id</div>
+        <p class="small">© 2025 sendal.id. All rights reserved.</p>
+      </div>
+      <div>
+        <div class="small">Kontak: hello@sendal.id</div>
+        <div class="small">IG: @sendal.id</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
